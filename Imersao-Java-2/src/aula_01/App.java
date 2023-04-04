@@ -10,15 +10,16 @@ import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
 
-/**
- *
- * @author eber
- */
+
 public class App {
 
     public static void main(String[] args) throws Exception {
 
+
         API api = API.NASA;
+
+       // API api = API.IMDB_TOP_SERIES;
+
 
         String url = api.getUrl();
         ExtratorDeConteudo extrator = api.getExtrator();
